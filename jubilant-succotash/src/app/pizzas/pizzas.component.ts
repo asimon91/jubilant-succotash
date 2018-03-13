@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Pizza } from '../pizza'
+import { Pizza } from '../pizza';
+import { PIZZAS } from '../mock-pizzas';
 
 @Component({
   selector: 'app-pizzas',
@@ -7,14 +8,17 @@ import { Pizza } from '../pizza'
   styleUrls: ['./pizzas.component.css']
 })
 export class PizzasComponent implements OnInit {
-  pizza: Pizza = {
-    id: 1,
-    name: 'Carbonara'
-  };
+  pizzas = PIZZAS;
+
+  selectedPizza: Pizza;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(pizza: Pizza): void {
+    this.selectedPizza = pizza;
   }
 
 }
