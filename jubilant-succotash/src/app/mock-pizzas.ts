@@ -15,6 +15,5 @@ export const PIZZAS: Pizza[] = [
     { id: 12, name: 'Marinara' },
     { id: 13, name: 'Peperoni' },
     { id: 14, name: 'Vegetariana' },
-    { id: 15, name: 'Margherita' },
-    { id: 16, name: 'Funghi' }
+    { id: 15, name: 'Funghi' }
 ]
