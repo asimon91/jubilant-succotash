@@ -6,12 +6,4 @@
     <span class="badge">{{pizza.id}}</span> {{pizza.name}}
   </li>
 </ul>
-<div *ngIf="selectedPizza">
-  <h2>{{ selectedPizza.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{selectedPizza.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedPizza.name" placeholder="name">
-    </label>
-  </div>
-</div>
+<app-pizza-detail [pizza]="selectedPizza"></app-pizza-detail>
