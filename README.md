@@ -1,5 +1,5 @@
 # jubilant-succotash
-Repository with a basic Angular webapp example.
+Repository with a basic Angular pizza-based 🍕 webapp example.
 
 Based on official documentation, available on:
 
