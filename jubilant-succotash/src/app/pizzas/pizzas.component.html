@@ -1,9 +1,9 @@
 <h2>My Pizzas</h2>
 <ul class="pizzas">
-  <li *ngFor="let pizza of pizzas" 
-  [class.selected]="pizza === selectedPizza"
-  (click)="onSelect(pizza)">
-    <span class="badge">{{pizza.id}}</span> {{pizza.name}}
+  <li *ngFor="let pizza of pizzas">
+    <a routerLink="/detail/{{pizza.id}}">
+      <span class="badge">{{pizza.id}}</span>
+      {{pizza.name}}
+    </a>
   </li>
 </ul>
-<app-pizza-detail [pizza]="selectedPizza"></app-pizza-detail>

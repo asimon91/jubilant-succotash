@@ -11,7 +11,7 @@ import { PizzaService } from '../pizza.service';
 export class PizzasComponent implements OnInit {
   pizzas: Pizza[];
 
-  selectedPizza: Pizza;
+  //selectedPizza: Pizza;
 
   constructor(private pizzaService: PizzaService) { }
 
@@ -19,9 +19,9 @@ export class PizzasComponent implements OnInit {
     this.getPizzas();
   }
 
-  onSelect(pizza: Pizza): void {
+  /*onSelect(pizza: Pizza): void {
     this.selectedPizza = pizza;
-  }
+  }*/
 
   getPizzas(): void{
     this.pizzaService.getPizzas().subscribe(

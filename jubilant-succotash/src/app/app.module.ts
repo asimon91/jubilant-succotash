@@ -8,6 +8,8 @@ import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
 import { PizzaService } from './pizza.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -15,11 +17,13 @@ import { MessageService } from './message.service';
     AppComponent,
     PizzasComponent,
     PizzaDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [
     PizzaService,

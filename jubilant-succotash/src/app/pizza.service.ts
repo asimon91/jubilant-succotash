@@ -15,4 +15,9 @@ export class PizzaService {
     this.messageService.add('PizzaService: fetched pizzas');
     return of(PIZZAS);
   }
+  getPizza(id: number): Observable<Pizza> {
+    // Todo: send the message _after_ fetching the hero
+    this.messageService.add(`PizzaService: fetched pizza id=${id}`);
+    return of(PIZZAS.find(hero => hero.id === id));
+  }
 }
